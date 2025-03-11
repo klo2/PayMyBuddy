@@ -22,7 +22,7 @@ public class Transaction {
     @JoinColumn(name = "receiver_id", nullable = false)
     private User receiver;
 
-    @Column(nullable = false, precision = 10, scale = 2)
+    @Column(nullable = false)
     private  double amount;
     @Column(length = 255, nullable = true) // Nullable autorisé si la description est optionnelle
     private String description;
