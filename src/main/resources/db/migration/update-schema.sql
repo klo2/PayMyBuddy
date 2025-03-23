@@ -45,3 +45,5 @@ ALTER TABLE users_connections
 -- Ajout d'une contrainte de clé étrangère dans 'users_connections' pour relier 'user_id' au champ 'id' dans 'users'
 ALTER TABLE users_connections
     ADD CONSTRAINT fk_usecon_on_user FOREIGN KEY (user_id) REFERENCES users (id);
+
+ALTER TABLE users MODIFY COLUMN id BIGINT NOT NULL AUTO_INCREMENT;
